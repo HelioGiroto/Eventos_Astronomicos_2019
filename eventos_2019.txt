@@ -1,0 +1,117 @@
+https://es.wikipedia.org/wiki/Predicci%C3%B3n_de_terremotos
+https://pt.wikipedia.org/wiki/Siz%C3%ADgia_(astronomia)#Varia%C3%A7%C3%A3o_das_mar%C3%A9s
+
+
+
+5/1 Sagittarius
+6/1 Sagittarius
+7/1 Sagittarius
+4/2 Capricornus
+5/2 Capricornus
+6/3 Aquarius
+7/3 Aquarius
+4/4 Pisces
+6/4 Pisces
+5/5 Aries
+2/6 Taurus
+3/6 Taurus
+4/6 Taurus
+3/7 Gemini
+1/8 Cancer
+30/8 Leo
+31/8 Leo
+28/9 Virgo
+29/9 Virgo
+30/9 Virgo
+26/10 Virgo
+27/10 Virgo
+28/10 Virgo
+26/12 Sagittarius
+27/12 Sagittarius
+28/12 Sagittarius
+
+
+# TODOS OS EVENTOS: ver: http://www.astropixels.com/ephemeris/astrocal/astrocal2019gmt.html
+
+lynx -dump -nolist https://eclipse.gsfc.nasa.gov/solar.html | grep '2019' # eclipses solares de 2019
+
+
+lynx -dump -nolist https://eclipse.gsfc.nasa.gov/lunar.html | grep '2019' # eclipses lunares de 2019
+
+
+
+https://eclipse.gsfc.nasa.gov/transit/catalog/MercuryCatalog.html 
+# 11-11-2019 - Mercurio passa em frente ao Sol
+lynx -dump -nolist https://eclipse.gsfc.nasa.gov/transit/catalog/MercuryCatalog.html | grep '2019'
+
+# Venus no sol? Não em 2019
+lynx -dump -nolist https://eclipse.gsfc.nasa.gov/transit/catalog/VenusCatalog.html | grep '2019'
+
+
+
+# Fases da Lua - Cheia e nova
+
+# Chuvas de meteoros
+
+# Conjunções
+
+# http://www.go-astronomy.com/solar-system/event-calendar.htm
+
+ 
+# Gifs animados dos eclipses do sol em 2019:
+hxwls https://eclipse.gsfc.nasa.gov/solar.html | grep 'GIF' | grep '2019' | grep 'animate'
+
+# PDFs dos eclipses lunares de 2019:
+hxwls https://eclipse.gsfc.nasa.gov/lunar.html | grep 'pdf' | grep '2019'
+
+# Para baixar esses pdfs:
+wget $(hxwls https://eclipse.gsfc.nasa.gov/lunar.html | grep 'pdf' | grep '2019')
+
+
+# Extreme Aphelions of Earth: 2001 to 2100
+                                    Date        GMT         Distance       Relative to
+                                                                             Mean Ap.
+            Minimum Aphelion:    2085 Jul 04   21:34       1.0166125 AU     -14634 km
+            Maximum Aphelion:    2019 Jul 04   22:11       1.0167543 AU       6590 km
+
+# Fonte: http://www.astropixels.com/ephemeris/perap2001.html
+
+
+# Equinócios e ...
+ Year      Spring Equinox   Summer Solstice    Fall Equinox     Winter Solstice
+ 2019      Mar 20  21:58     Jun 21  15:54     Sep 23  07:50     Dec 22  04:19    
+# fonte: http://www.astropixels.com/ephemeris/soleq2001.html
+
+### COMO APLIQUEI O AWK PARA GARIMPAR O .CSV E SALVAR NUM ARQUIVO RENOMEADO PARA .TXT:
+
+$ for arq in $(ls *.csv)
+> do
+> awk -F';' '{print $1 ";" $3}' $arq > $(echo $arq | sed 's/\.csv/.txt/')
+> done
+
+
+### Como comparar em python:
+
+jup = open('Jupiter.txt', 'r')
+mar = open('Marte.txt', 'r')
+mer = open('Mercurio.txt', 'r')
+ven = open('Venus.txt', 'r')
+sat = open('Saturno.txt', 'r')
+sol = open('Sol.txt', 'r')
+lua = open('Lua.txt', 'r')
+net = open('Netuno.csv', 'r')
+plu = open('Plutao.csv', 'r')
+ura = open('Urano.csv', 'r')
+
+comm = set(jup) & set(mar) & set(mer) & set(ven) & set(sol) & set(lua) & set(net) & set(plu) & set(ura)
+
+texto = str(comm)
+
+saida = open('datas_comuns_bruto.txt', 'a')
+saida.write(texto)
+saida.close()
+
+# Fonte: https://github.com/HelioGiroto/23-Set/blob/master/23_Set.py
+
+
+

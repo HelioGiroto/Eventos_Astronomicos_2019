@@ -1,0 +1,23 @@
+https://ssd.jpl.nasa.gov/horizons.cgi?show=1#results
+https://ssd.jpl.nasa.gov/?horizons#email
+
+ horizons@ssd.jpl.nasa.gov
+assunto: BATCH-LONG
+
+
+!$$SOF
+COMMAND= 'DES=21P;NOFRAG;SOLN=K182/9'
+CENTER= '500@10'
+MAKE_EPHEM= 'YES'
+TABLE_TYPE= 'ELEMENTS'
+START_TIME= '2018-12-24'
+STOP_TIME= '2019-12-31'
+STEP_SIZE= '1 d'
+OUT_UNITS= 'AU-D'
+REF_PLANE= 'ECLIPTIC'
+REF_SYSTEM= 'J2000'
+TP_TYPE= 'ABSOLUTE'
+ELEM_LABELS= 'YES'
+CSV_FORMAT= 'YES'
+OBJ_DATA= 'YES'
+!$$EOF
