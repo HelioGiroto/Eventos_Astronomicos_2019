@@ -25,7 +25,7 @@ print('HOJE, a Lua está em:', ephem.constellation(ephem.Moon(ephem.now())), 'à
 print()
 
 
-# Para ver lista das 50 maiores aproximações da Lua da Terra:
+# Para ver lista das 50 maiores aproximações (menor distância) entre a Lua e Terra:
 # $ sort -nk2 moon_au_2019.csv | head -n50
 
 # Lista do maior PERIGEU (+ próx.) de cada mês (ordenados por mês):
