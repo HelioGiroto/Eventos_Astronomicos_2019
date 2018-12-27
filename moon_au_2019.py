@@ -8,7 +8,7 @@ dia = ephem.Date('2019/01/01')	# data convertida em aaaa/mm/dd
 
 print()
 
-arq=open("moon_au_2019.csv", "a+")
+arq=open("moon_au_2019.csv", "a+")	# Este será o arquivo CSV que todos os dados estarão impressos
 
 for i in range(366):	
 	data = ephem.Date(dia)					# Para não imprimir em data Linux, mas em formato aaaa/m/d		
