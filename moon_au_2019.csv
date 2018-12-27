@@ -367,7 +367,7 @@ Data (ano/mês/dia),Distância entre a Terra e a Lua (em UA), Constelação que 
 2020/1/1, 0.0026996415108442307, ('Aqr' - 'Aquarius')
 ,,
 ,,
-# LISTA EM ÓRDEM CRESCENTE DE DISTÂNCIA,,
+# LISTA EM ÓRDEM CRESCENTE DE DISTÂNCIA (Perigeu no topo),,
 2019/2/19, 0.0023857566993683577, ('Leo' - 'Leo')
 2019/2/20, 0.002387415850535035, ('Leo' - 'Leo')
 2019/8/31, 0.00238832738250494, ('Leo' - 'Leo')
