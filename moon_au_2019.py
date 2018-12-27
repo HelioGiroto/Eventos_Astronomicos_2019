@@ -25,6 +25,13 @@ print('HOJE, a Lua está em:', ephem.constellation(ephem.Moon(ephem.now())), 'à
 print()
 
 
-# Para ver lista das 50 maiores aproximações de Vênus da Terra.
-# $ cat moon_au_2019.csv | sort -t';' -k3 | head -n50 | cat -n		
+# Para ver lista das 50 maiores aproximações da Lua da Terra:
+# $ sort -nk2 moon_au_2019.csv | head -n50
+
+# Lista do maior PERIGEU (+ próx.) de cada mês (ordenados por mês):
+# $ for i in $(seq 1 12); do grep "/${i}/" moon_au_2019.csv | sort -nk2 | head -n1; done
+
+# Lista dos maiores PERIGEUS (+ próx) do ano (um por mês ordenados por UA):
+# $ for i in $(seq 1 12); do grep "/${i}/" moon_au_2019.csv | sort -nk2 | head -n1; done | sort -nk2
+
 # Autor: Helio Giroto
