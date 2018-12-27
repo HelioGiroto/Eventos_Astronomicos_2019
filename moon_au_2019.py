@@ -18,7 +18,7 @@ for i in range(366):
 	arq.write( str(data) + str(";") + str(au) + str(";") + str(constelacao) )
 	arq.write('\n')
 
-	dia += 1	# Avança um dia e volta a realizar o laço de dias e anos até atingir o limite.
+	dia += 1		# Avança (soma) um dia e volta a realizar o laço
 
 arq.close()
 print('HOJE, a Lua está em:', ephem.constellation(ephem.Moon(ephem.now())), 'à', ephem.Moon(ephem.now()).earth_distance, 'UA da Terra.') 
