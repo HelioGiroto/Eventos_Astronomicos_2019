@@ -24,7 +24,6 @@ arq.close()
 print('HOJE, a Lua está em:', ephem.constellation(ephem.Moon(ephem.now())), 'à', ephem.Moon(ephem.now()).earth_distance, 'UA da Terra.') 
 print()
 
-
 # Para ver lista das 50 maiores aproximações (menor distância) entre a Lua e Terra:
 # $ sort -nk2 moon_au_2019.csv | head -n50
 
@@ -33,5 +32,9 @@ print()
 
 # Lista dos maiores PERIGEUS (+ próx) do ano (um por mês ordenados por UA):
 # $ for i in $(seq 1 12); do grep "/${i}/" moon_au_2019.csv | sort -nk2 | head -n1; done | sort -nk2
+
+# Consulta livre na linha de comando (no Python3):
+# >>> import ephem
+# >>> print('HOJE, a Lua está em:', ephem.constellation(ephem.Moon(ephem.now())), 'à', ephem.Moon(ephem.now()).earth_distance, 'UA da Terra.') 
 
 # Autor: Helio Giroto
