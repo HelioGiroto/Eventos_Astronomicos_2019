@@ -292,6 +292,14 @@ print(dec)
 print(distance)
 
 
+# EXEMPLOS COM LAÇO:
+ano = 2020
+mes = 6
+>>> for dia in range(30):
+...     terra_venus = earth.at(ts.utc(ano, mes, dia)).observe(venus)
+...     print(dia, end='')
+...     terra_venus.radec()
+... 
 
 
 
