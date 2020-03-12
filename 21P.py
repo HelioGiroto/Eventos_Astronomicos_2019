@@ -3,13 +3,13 @@ line = '21P/Giacobini-Zinner,e,32.0059,195.3730,172.8480,3.496349,0.1507585,0.71
 
 yh = ephem.readdb(line)
  
-yh.compute('20200312')
+yh.compute('2020/03/12')
  
 print(yh.earth_distance)
 
 print(yh.mag)
 
-yh.compute('20181010')
+yh.compute('2018/10/10')
  
 print(yh.earth_distance)
 
