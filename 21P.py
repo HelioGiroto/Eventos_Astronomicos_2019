@@ -19,4 +19,5 @@ print(yh.mag)
 
 # fonts: 
 # https://minorplanetcenter.net/iau/Ephemerides/Comets/Soft03Cmt.txt
+# https://rhodesmill.org/pyephem/quick.html
 
