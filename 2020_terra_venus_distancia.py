@@ -37,7 +37,7 @@ for mes in range(1, 13):
 ########### RESULTADO ##############
 
 '''
-$ python3 terra_venus_distancia.py 
+$ python3 2020_terra_venus_distancia.py 
 
 1/1/2020 - 1.27803 au
 2/1/2020 - 1.27238 au
