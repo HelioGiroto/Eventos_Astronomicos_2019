@@ -3,7 +3,7 @@
 # coding: utf-8
 # Author: Helio Giroto
 # Date: 21/03/2020
-
+######## SCRIPT PARA CALCULAR A DISTÂNCIA ENTRE O PLANETA TERRA E VÊNUS NO ANO DE 2020 ########
 
 from skyfield.api import load
 # para instalar este módulo acima, digite no Terminal: 
