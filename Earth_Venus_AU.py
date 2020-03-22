@@ -9,4 +9,4 @@ for i in range(366):
    dia += 1
  
 # Este script usando EPHEM não é tão preciso na distancia como o skyfield!!
-# Ver script mais preciso em: 
+# Ver script mais preciso em: https://github.com/HelioGiroto/Eventos_Astronomicos_2019/blob/master/terra_venus_distancia.py
