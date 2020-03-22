@@ -164,7 +164,7 @@ $ python3 terra_venus_distancia.py
 30/4/2020 - 0.436183 au
 31/4/2020 - 0.429285 au
 1/5/2020 - 0.429285 au
-2/5/2020 - 0.422465 au
+2/5/2020 - 0.422465 au		### DATA LIMITE PARA SER VISÍVEL NO CÉU A NOITE EM SP: (2 de maio) ###
 3/5/2020 - 0.415728 au
 4/5/2020 - 0.409081 au
 5/5/2020 - 0.40253 au
